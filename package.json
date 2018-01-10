@@ -1,0 +1,25 @@
+{
+  "name": "grpc-dtw-kickstarter",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "license": "MIT",
+  "dependencies": {
+    "grpc": "^1.8.0"
+  },
+  "scripts": {
+    "start": "yarn run rebuild && webpack-watch-server",
+    "dev": "SERVER_PORT=50051 webpack-watch-server",
+    "build": "webpack --display-error-details",
+    "rebuild": "npm rebuild"
+  },
+  "devDependencies": {
+    "@types/node": "^9.3.0",
+    "jshint": "^2.9.5",
+    "ts-loader": "^3.2.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0",
+    "webpack-watch-server": "^1.2.1"
+  }
+}

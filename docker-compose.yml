@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  server:
+    build: .
+    command: yarn start
+    env_file:
+      - environments/vars.env
+    ports:
+      - '50051:50051'
+    volumes:
+      - .:/code
