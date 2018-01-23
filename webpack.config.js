@@ -12,7 +12,7 @@ fs.readdirSync('node_modules')
   });
 
 module.exports = {
-  entry: './src/server.ts',
+  entry: './src/index.ts',
   target: 'node',
   node: {
     __dirname: true

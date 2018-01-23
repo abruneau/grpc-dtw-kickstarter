@@ -1,0 +1,19 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "book_client.js",
+  "scripts": {
+    "start": "bash protogen.sh && tsc ./book_client && node ./book_client.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "grpc": "^1.8.4",
+    "ts-protoc-gen": "^0.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^9.3.0",
+    "typescript": "^2.6.2"
+  }
+}

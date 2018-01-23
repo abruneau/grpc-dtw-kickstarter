@@ -26,10 +26,11 @@ The server use webpack to watch for changes on your local machine, recompile, an
 To run the client, install dependencies
 
 ```
-npm install --only=production
+cd client
+yarn
 ```
 
 and start the client
 ```
-node client
+yarn start
 ```
